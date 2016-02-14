@@ -1,0 +1,18 @@
+.flex-container {
+  display: flex;
+  height: 5em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  height: 5em;
+}
+
+.nav .btn {
+  height: 2.5em;
+}
+
+.btn {
+  border-radius: 0;
+}

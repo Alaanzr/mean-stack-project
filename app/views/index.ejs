@@ -4,17 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/master.css">
 </head>
 
 <body>
-  <h1>Welcome!</h1>
-  <% if (user) { %>
-    <h2>Hello <%= user %> </h2>
-    <a href="/signout">Sign out</a>
-  <% } else { %>
-      <a href="/signup">Signup</a>
-      <a href="/signin">Signin</a>
-  <% } %>
+  <div class="nav navbar-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="pull-right">
+            <div class="flex-container">
+              <% if (!user) { %>
+                <a href="/signup">
+                  <button class="btn btn-danger" type="button">Signup</button>
+                </a>
+                <a href="/signin">
+                  <button class="btn btn-primary" type="button">Signin</button>
+                </a>
+                <% } %>
+                  <% if (user) { %>
+                    <a href="/signout">
+                      <button class="btn btn-info" type="button">Sign out</button>
+                    </a>
+                    <% } %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <% if (user) { %>
+      <h2>Hello <%= user %> </h2>
+      <% } %>
+  </div>
+
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "mean-stack",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alaanzr <Alaanzr@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Alaanzr/mean-stack-project",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
