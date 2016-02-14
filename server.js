@@ -1,7 +1,8 @@
 var express = require('./config/express.js'), mongoose = require('./config/mongoose.js');
 
-var app = express();
 var db = mongoose();
+var app = express();
+
 
 app.listen(3000);
 
