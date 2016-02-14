@@ -1,7 +1,8 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+  config = require('./config.js');
 
 module.exports = function() {
-  var db = mongoose.connect('mongodb://localhost/mean-stack');
+  var db = mongoose.connect(config.db);
 
   require('../app/models/user.server.model.js');
 
