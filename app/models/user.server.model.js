@@ -11,7 +11,7 @@ var UserSchema = new Schema({
   },
   email: {
     type: String,
-    match: /.+@\..+/,
+    match: /.+\@.+\.+/,
     required: true
   },
   username: {
