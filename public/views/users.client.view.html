@@ -1,1 +1,7 @@
-<h1> Users Page </h1>
+<div ng-controller="UserCtrl as userVm">
+  <h1> Users Page </h1>
+
+  <ul ng-repeat="user in userVm.users">
+    <li ng-bind="user.firstName"></li>
+  </ul>
+</div>

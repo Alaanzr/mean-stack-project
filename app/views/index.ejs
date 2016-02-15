@@ -13,14 +13,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="col-md-6">
             <div class="flex-container pull-left">
                 <a href="#!/"><button class="btn btn-danger" type="button">Home</button></a>
                 <a href="#!/users"><button class="btn btn-danger" type="button">Users</button></a>
             </div>
-          </div>
-          <div class="col md-6 pull-right">
-            <div class="flex-container">
+            <div class="flex-container pull-right">
               <% if (!user) { %>
                 <a href="/signup">
                   <button class="btn btn-primary" type="button">Signup</button>
@@ -35,8 +32,6 @@
                     </a>
                     <% } %>
             </div>
-
-          </div>
         </div>
       </div>
     </div>
@@ -55,7 +50,10 @@
 
   <script src="/bower_components/angular/angular.js"></script>
   <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.js"></script>
   <script src="/application.js"></script>
+  <script src="/services/userService.js"></script>
+  <script src="/controllers/users.client.controller.js"></script>
   <script src="/config/routes.js"></script>
   <script src="/views/users.client.view.html"></script>
 </body>
