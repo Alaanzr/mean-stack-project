@@ -13,27 +13,37 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-            <div class="flex-container pull-left">
-                <a href="#!/"><button class="btn btn-danger" type="button">Home</button></a>
-                <a href="#!/users"><button class="btn btn-danger" type="button">Users</button></a>
-            </div>
-            <div class="flex-container pull-right">
-              <% if (!user) { %>
-                <a href="/signup">
-                  <button class="btn btn-primary" type="button">Signup</button>
-                </a>
-                <a href="/signin">
-                  <button class="btn btn-primary" type="button">Signin</button>
-                </a>
-                <% } %>
-                  <% if (user) { %>
-                    <a href="/signout">
-                      <button class="btn btn-info" type="button">Sign out</button>
-                    </a>
-                    <% } %>
-            </div>
+          <div class="flex-container pull-left">
+            <a href="#!/">
+              <button class="btn btn-danger" type="button">Home</button>
+            </a>
+            <a href="#!/users">
+              <button class="btn btn-danger" type="button">Users</button>
+            </a>
+          </div>
+          <div class="flex-container pull-right">
+            <% if (!user) { %>
+              <a href="/signup">
+                <button class="btn btn-primary" type="button">Signup</button>
+              </a>
+              <a href="/signin">
+                <button class="btn btn-primary" type="button">Signin</button>
+              </a>
+              <% } %>
+                <% if (user) { %>
+                  <a href="/signout">
+                    <button class="btn btn-info" type="button">Sign out</button>
+                  </a>
+                  <% } %>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="jumbo">
+    <div class="container">
+      <img src="http://orig07.deviantart.net/148d/f/2011/282/5/6/baldur__s_gate_ii_icon_by_kamizanon-d4c9rf3.png" alt="" />
     </div>
   </div>
 

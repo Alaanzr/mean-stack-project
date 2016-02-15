@@ -20,3 +20,18 @@
 .signin-body {
   margin-top: 50%;
 }
+
+.jumbo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30em;
+  background: #dfe0e6;
+}
+
+.jumbo img {
+  margin: 0 auto;
+  display: block;
+  height: 25em;
+  width: 25em;
+}
