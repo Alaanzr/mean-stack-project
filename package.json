@@ -1,12 +1,15 @@
 {
-  "name": "mean-stack",
+  "name": "mean-stack-template",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "authors": [
+    "Alaanzr <Alaanzr@gmail.com>"
+  ],
+  "homepage": "https://github.com/Alaanzr/mean-stack-project",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
